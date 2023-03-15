@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Twin</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- SEARCH -->
+    <div class="search">
+        <input type="text" placeholder="Enter City Name.." class="search-bar">
+        <!-- <button type="submit"><img src="search-button.png" alt="search icon" width="50"></button> -->
+        <button type="submit" class = "search-button"><img class="search-icon" src="search-button.png" width="30"></button>
+    </div>
+    <div class="container">
+        <div class = "card1">
+            <!-- DISPLAY -->
+            <div class="weather">
+                <div class="top">
+                    <div class="temp"></div>
+                    <div class="city">Loading...</div>
+                </div>
+                <div class="bottom">
+                    <div class="bottom-data">
+                        <div id="date">Thursday, 16 March</div>
+                        <div class="description"></div>
+                        <div class="tempMinMax"></div>
+                    </div>
+                    <div class="bottom-image">
+                        <img src="https://openweathermap.org/img/wn/04d.png" alt="" class="icon" width="100">
+                    </div>
+                        
+                </div>
+            </div>
+        </div>
+        <div class = "card2">
+            <!-- DISPLAY -->
+            <div class="weather">
+                <div class="top">
+                    <div class="temp2"></div>
+                    <div class="city2">Compare Your Weather</div>
+                </div>
+                <div class="bottom">
+                    <div class="bottom-data">
+                        <div id="date2"></div>
+                        <div class="description2"></div>
+                        <div class="tempMinMax2"></div>
+                    </div>
+                    <div class="bottom-image">
+                        <img src="https://openweathermap.org/img/wn/04d.png" alt="" class="icon2" width="100">
+                    </div>
+
+            </div>
+        </div>
+    </div>
+
+<script> 
+    var x = document.getElementById("location");
+
+    function getLocation() {
+        if(navigator.geolocation){
+            navigator.geolocation.getCurrentPosition(showPosition);
+        }
+        else{
+            x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
+
+    function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
+    }
+</script>    
+</body>
+</html>

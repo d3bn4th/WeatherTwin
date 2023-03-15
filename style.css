@@ -1,0 +1,169 @@
+body {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 3em;
+    font-family: 'Open Sans', sans-serif;
+    background: #E5E5E5;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card1 {
+    color: white;
+    border-radius: 30px;
+    width: 400px;
+    height: 500px;
+    margin: 2em;
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(324.84deg, rgba(239, 188, 56, 0.136) 14.05%, rgba(250, 186, 24, 0.2) 100%), linear-gradient(271.24deg, #FDD368 -4.18%, #F8B70F -4.17%, rgba(222, 194, 123, 0.6) 110.03%), url(mumbai.jpg);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    
+}
+.card2 {
+    color: white;
+    border-radius: 30px;
+    width: 400px;
+    height: 500px;
+    margin: 2em;
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(322.09deg, rgba(249, 57, 57, 0.2) 13.99%, rgba(255, 98, 98, 0.2) 104.25%), linear-gradient(273.21deg, #F94545 -7%, rgba(255, 80, 80, 0.65) 102.49%), url(delhi.jpg);
+    box-shadow: 0px 8px 16px rgba(24, 19, 6, 0.25);
+    border-radius: 16px;
+    
+}
+.weather{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.top {
+    padding: 1em;
+    height: 300px;
+    align-self: top-rigth;
+    margin: 1em;
+}
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2em;
+    margin: none;
+    background: #FFFFFF;
+    color: #191919; 
+    width:337px;
+    height: 105px;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    line-height: 2;
+    
+}
+
+#date{
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 60px;
+    color: #191919;
+    opacity: 0.7;
+
+}
+#date2{
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 60px;
+    color: #191919;
+    opacity: 0.7;
+
+}
+.search {
+    color: #55555500;
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    border: 1px solid currentColor;
+    border-radius: 5px;
+}
+.search-button {
+    border: none;
+    background-color: #E5E5E5;
+}
+input.search-bar {
+    padding: 1em 1em;
+    border-radius: 30px;
+    background-color: #f9f9f9;
+    color: #191919;
+    opacity: 0.7;
+    font-size: 1.85em;
+    font-family: inherit;
+    font-family: 50%;
+    width: 300px;
+    height: 2.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.temp {
+    font-size: 50px;
+}
+.temp2 {
+    font-size: 50px;
+}
+.city { 
+    font-size: 1.5em;
+}
+.city2 { 
+    font-size: 1.5em;
+}
+button[type="submit"] {
+    background: url("search-button.png") transparent;
+    cursor: pointer;
+    opacity: 0.5;
+    background-color: #ffffff89;
+    border-radius: 30px;
+  }
+  
+button[type="submit"]:hover {
+    opacity: 1;
+}
+
+.flex {
+    display: flex;
+}
+.description {
+    text-transform: capitalize;
+    font-size: 1.2em;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #6B6B6B;
+    opacity: 0.4;
+}
+.tempMinMax {
+    color: #6B6B6B;
+    font-size: 1em;
+    opacity: 0.4;
+}
+.description2 {
+    text-transform: capitalize;
+    font-size: 1.2em;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #6B6B6B;
+    opacity: 0.4;
+}
+.tempMinMax2 {
+    color: #6B6B6B;
+    font-size: 1em;
+    opacity: 0.4;
+}
+
+.weather.loading {
+    visibility: hidden;
+}
