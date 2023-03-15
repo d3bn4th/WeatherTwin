@@ -20,7 +20,7 @@ body {
     height: 500px;
     margin: 2em;
     font-family: 'Open Sans', sans-serif;
-    background: linear-gradient(324.84deg, rgba(239, 188, 56, 0.136) 14.05%, rgba(250, 186, 24, 0.2) 100%), linear-gradient(271.24deg, #FDD368 -4.18%, #F8B70F -4.17%, rgba(222, 194, 123, 0.6) 110.03%), url(/images/mumbai.jpg);
+    background: linear-gradient(324.84deg, rgba(239, 188, 56, 0.136) 14.05%, rgba(250, 186, 24, 0.2) 100%), linear-gradient(271.24deg, #FDD368 -4.18%, #F8B70F -4.17%, rgba(222, 194, 123, 0.6) 110.03%), url(images/mumbai.jpg);
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
     border-radius: 16px;
     
@@ -32,7 +32,7 @@ body {
     height: 500px;
     margin: 2em;
     font-family: 'Open Sans', sans-serif;
-    background: linear-gradient(322.09deg, rgba(249, 57, 57, 0.2) 13.99%, rgba(255, 98, 98, 0.2) 104.25%), linear-gradient(273.21deg, #F94545 -7%, rgba(255, 80, 80, 0.65) 102.49%), url(/images/delhi.jpg);
+    background: linear-gradient(322.09deg, rgba(249, 57, 57, 0.2) 13.99%, rgba(255, 98, 98, 0.2) 104.25%), linear-gradient(273.21deg, #F94545 -7%, rgba(255, 80, 80, 0.65) 102.49%), url(images/delhi.jpg);
     box-shadow: 0px 8px 16px rgba(24, 19, 6, 0.25);
     border-radius: 16px;
     
