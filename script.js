@@ -26,7 +26,7 @@ let weather = {
         document.querySelector(".description").innerText = description;
         document.querySelector(".tempMinMax").innerText = Math.round(temp_min) + "° / " + Math.round(temp_max) + " °";
         // document.card1.style.backgroundImage = url("CITY.jpg");
-        document.querySelectorAll(".icon").src = "https://openweathermap.org/img/wn/"+ icon + ".png";
+        document.querySelector(".icon").src = "https://openweathermap.org/img/wn/"+ icon + ".png";
         const d = new Date();
         document.getElementById("date").innerHTML = d.getDate() + " / " + d.getMonth() + " /  " + d.getFullYear();        
     },
@@ -65,7 +65,7 @@ let weather2 = {
         document.querySelector(".description2").innerText = description;
         document.querySelector(".tempMinMax2").innerText = Math.round(temp_min) + "° / " + Math.round(temp_max) + " °";
         // document.card1.style.backgroundImage = url("CITY.jpg");
-        document.querySelectorAll(".icon").src = "https://openweathermap.org/img/wn/"+ icon + ".png";
+        document.querySelector(".icon2").src = "https://openweathermap.org/img/wn/"+ icon + ".png";
         // document.querySelector(".weather").classList.remove("loading");
         const d = new Date();
         document.getElementById("date2").innerHTML = d.getDate() + " / " + d.getMonth() + " /  " + d.getFullYear();
